@@ -1,41 +1,211 @@
 /* Estilos CSS Base - Los alumnos deben completar este archivo */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* TODO: Agregar estilos responsive aquí (media queries) para diferentestamaños de pantalla */
+
+@media (max-width: 768px) {
+    .producto {
+        width: 100%;
+    }
+    #contenedor-productos {
+        grid-template-columns: 1fr; /* Solo 1 columna en pantallas pequeñas */
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px; /* Reducir espacio entre enlaces en pantallas pequeñas */
+    }
+    footer {
+        font-size: 12px;
+    }
+    .carrusel-principal img {
+        max-width: 80%; /* Las imágenes ocupan más espacio en pantallas pequeñas */
+        max-height: 80%;
+    }
+    #redes-sociales {
+        padding: 5px; /* Reduce el espacio interno */
+    }
+
+    #redes-sociales img {
+        width: 25px; /* Reduce el tamaño de los íconos */
+        height: 25px;
+    }
 }
 
-header {
-    background-color: #d3cece;
-    /* Un color gris claro base - Cambiar por
-    los alumnos */
-    padding: 20px;
-    text-align: center;
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos generales de la pagina, cuerpo, titulos, parrafos, botones etc*/
+
+body {
+    background: #04080D; /* Base oscura */
+    background-repeat: repeat; /* Repite el patrón */
+    background-size: cover; /* Escala adecuadamente */
+    color: #F5FBEF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
+
+
+
+/* Estilo ara subtítulos */
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #F24171; /* Subtítulos vibrantes */
+    margin: 20px 0 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+}
+
+.tarjeta {
+    background-color: #282829;
+    color: #F5FBEF;
+    border: 2px solid #F24162;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Profundidad adicional */
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+}
+
+
+button {
+    background-color: #a62d437a; /* Fondo inicial */
+    color: #F5FBEF; /* Texto claro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #f24162e1; /* Cambio de color en hover */
+    transform: scale(1.05); /* Efecto de ampliación ligera */
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------- Estilos del header --------------------------------------------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #04080D, #16161d); /* Gradiente oscuro */
+    padding: 20px;
+    height: 120px;
+    box-shadow: 0px 4px 12px rgba(207, 207, 207, 0.514); /* Sombra sutil */
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #F5FBEF; /* Texto claro */
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    font-size: 36px;
+    color: #F24162; /* Texto claro */
+    letter-spacing: 3px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #F5FBEF;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #F24171; /* Resalta el hover con tono vibrante */
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------- Estilos del Footer ---------------------------------------------------------------------------------------------------------- */
+
+
+footer {
+    background: linear-gradient(135deg, #04080D, #1b1b24); /* Gradiente oscuro */
+    color: #F5FBEF;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    padding: 20px;
+    height: 120px;
+    box-shadow: 0px -2px 12px rgba(248, 248, 248, 0.3); /* Sombra superior */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+footer a {
+    color: #F24162; /* Enlaces vibrantes */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F24171; /* Resaltado en hover */
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------- Estilos del Main ---------------------------------------------------------------------------------------------------------- */
 
 main {
     display: flex;
-    /* Para maquetación flexible - Los alumnos pueden
-    experimentar con grid también */
-
+    /* Para maquetación flexible - Los alumnos pueden experimentar con grid también */
     flex-wrap: wrap;
-    /* Para que los productos se envuelvan en pantallas
-    pequeñas */
+    /* Para que los productos se envuelvan en pantallaspequeñas */
     justify-content: center;
     /* Centrar los productos horizontalmente */
     padding: 20px;
 }
 
 .producto {
-    border: 1px solid #aea3be;
-    /* Borde básico para cada producto - Estilizar
-    por los alumnos */
+    border: 1px solid #ccc;
+    /* Borde básico para cada producto - Estilizar por los alumnos */
     margin: 10px;
     padding: 15px;
     text-align: center;
     width: 250px;
-    /* Ancho base para cada producto - Adaptar para
-    responsive */
+    /* Ancho base para cada producto - Adaptar para responsive */
 }
 
 .producto img {
@@ -44,18 +214,244 @@ main {
     margin-bottom: 10px;
 }
 
-/* TODO: Agregar estilos responsive aquí (media queries) para diferentes
-    tamaños de pantalla */
 
-footer {
-    background-color: #0f0a0a;
-    /* Color base para el footer - Personalizar
-    por alumnos */
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    /* Footer fijo en la parte inferior - Opcional, los
-    alumnos pueden cambiar */
-    bottom: 0;
-    width: 100%;
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------- Estilos para el carrusel principal o inicial de imagenes de la pagina ------------------------------------------------------------*/
+
+.carrusel-principal {
+    position: relative;
+    width: 80%;
+    max-width: 400px; /* Tamaño máximo del carrusel */
+    max-height: 400px;
+    margin: 50px auto;
+    overflow: hidden; /* Oculta las partes sobrantes de las imágenes */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Añade una sombra suave para profundidad */
 }
+
+.carrusel-principal .imagenes {
+    display: flex; /* Mostrar imágenes en fila */
+    transition: transform 0.8s ease-in-out; /* Transición suave entre imágenes */
+}
+
+.carrusel-principal img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del carrusel */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    object-fit: cover; /* Ajusta las imágenes sin deformarlas */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+/* Efecto hover para imágenes */
+.carrusel-principal img:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada en hover */
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------- Estilos de la barra horizontal con las categorias -----------------------------------------------------------------------------------*/
+
+.barra-horizontal {
+    margin-top: 100px; /* Espaciado más claro para evitar sobresaturación visual */
+}
+
+.barra-horizontal ul {
+    display: flex; /* Mantén el diseño en fila */
+    justify-content: space-around; /* Distribuye las imágenes uniformemente */
+    align-items: center; /* Asegúrate de que las imágenes se alineen verticalmente */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px; /* Incrementa el espacio entre imágenes */
+}
+
+.barra-horizontal li {
+    display: flex;
+    flex-direction: column; /* El texto va debajo de las imágenes */
+    align-items: center; /* Centrar imágenes y texto */
+    text-align: center;
+}
+
+.barra-horizontal img {
+    width: 250px; /* Tamaño fijo de las imágenes */
+    height: 250px;
+    object-fit: cover; /* Ajusta las imágenes al contenedor */
+    border-radius: 10px; /* Retorna un pequeño borde redondeado */
+    margin: 0;
+}
+
+.barra-horizontal span {
+    margin-top: 25px; /* Espaciado ligeramente mayor entre imagen y texto */
+    font-size: 25px; /* Tamaño un poco más grande para comodidad visual */
+    font-weight: bold;
+    color: #F5FBEF; /* Color claro para buena visibilidad */
+}
+
+/* Estilo para los botones debajo de la barra */
+.barra-horizontal .botones {
+    display: flex;
+    justify-content: center; /* Centrar los botones horizontalmente */
+    margin-top: 10px;
+}
+
+.barra-horizontal button {
+    background-color: #46658C; /* Fondo inicial */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Aumentar el tamaño de las flechas */
+    color: #F5FBEF; /* Color claro para las flechas */
+    border-radius: 50%; /* Forma circular para los botones */
+    width: 40px; /* Tamaño fijo */
+    height: 40px; /* Tamaño fijo */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar las flechas */
+    transition: background-color 0.9s ease;
+}
+
+.barra-horizontal button:hover {
+    background-color: #F24171; /* Cambiar color en hover */
+}
+
+
+.barra-horizontal button:nth-child(1)::before {
+    content: '◄'; /* Icono de flecha para retroceder */
+}
+
+.barra-horizontal button:nth-child(2)::before {
+    content: '►'; /* Icono de flecha para avanzar */
+}
+
+
+/* Efectos para las imagenes de la barra horizontal*/
+.barra-horizontal img:hover {
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Resaltar al pasar el cursor */
+    transform: scale(1.20); /* Pequeño zoom */
+    transition: all 0.8s ease;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------- Estilos para el contenedor de las imagenes -------------------------------------------------------------------------------*/
+
+#contenedor-productos {
+    display: grid; /* Activa el diseño de grid */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 40px 30px; /* Separación entre filas y columnas */
+    padding: 20px; /* Espaciado interno */
+    margin: 50px auto; /* Centra horizontalmente y agrega espacio superior */
+    max-width: 1200px; /* Define un ancho máximo */
+    text-align: center; /* Centra el texto por defecto */
+}
+
+
+.producto {
+    background-color: #1e1e20; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    padding: 20px; /* Espaciado interno más amplio */
+    text-align: center; /* Centrar contenido */
+    margin: 15px auto; /* Separación automática arriba y abajo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos interactivos */
+}
+
+
+.producto:hover {
+    transform: translateY(-15px); /* Elevar ligeramente la tarjeta al pasar el cursor */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); /* Intensificar la sombra en hover */
+}
+
+.carrusel .imagenes {
+    display: flex;
+    gap: 100px; /* Espaciado entre imágenes */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    scroll-behavior: smooth; /* Transición suave al desplazarse */
+}
+
+.carrusel img {
+    flex: 0 0 150px; /* Tamaño fijo para las imágenes */
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra decorativa */
+}
+
+.producto h3 {
+    font-size: 18px; /* Tamaño del título del producto */
+    color: #F5FBEF; /* Texto claro */
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 14px; /* Tamaño del texto descriptivo */
+    color: #F5FBEF;
+    margin-bottom: 15px; /* Separar los párrafos */
+}
+
+.producto button {
+    background-color: #F24162; /* Fondo vibrante para el botón */
+    color: #F5FBEF; /* Texto claro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.8s ease, transform 0.5s ease;
+}
+
+.producto button:hover {
+    background-color: #A62D43; /* Cambio de color en hover */
+    transform: scale(1.10); /* Efecto de ampliación ligera */
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------- Estilos para el carrusel principal o inicial de imagenes de la pagina ------------------------------------------------------------*/
+
+#redes-sociales {
+    position: fixed; /* La barra se mantiene fija al lado de la pantalla */
+    top: 50%; /* Centrada verticalmente */
+    left: 0; /* Pegada al lado izquierdo */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    background-color: #1c1c1c; /* Fondo oscuro */
+    padding: 10px;
+    border-radius: 0 10px 10px 0; /* Bordes redondeados hacia la derecha */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+#redes-sociales ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organiza los íconos en una columna */
+    gap: 15px; /* Espacio entre los íconos */
+}
+
+#redes-sociales li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes-sociales img {
+    width: 35px; /* Tamaño de los íconos */
+    height: 35px; 
+    transition: transform 0.3s ease; /* Animación al pasar el cursor */
+}
+
+#redes-sociales img:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento en hover */
+}
+

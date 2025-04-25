@@ -7,9 +7,9 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mateo Muñoz Agudelo",
   "license": "ISC",
-  "description": "",
+  "description": "Catalogo de productos de Millenial System",
   "dependencies": {
     "express": "^5.1.0"
   }

@@ -1,20 +1,132 @@
 [
     {
         "id": 1,
-        "nombre": "Producto A",
-        "descripcion": "Descripción del Producto A. Este es un producto de ejemplo.","imagen": "producto-a.jpg",
-        "precio": 25.99
+        "nombre": "Teclado Redragon Kumara K552",
+        "descripcion": "Un teclado mecánico con retroiluminación RGB, perfecto para largas sesiones de juego.",   
+        "categoria": "Teclados",
+        "imagenes": [
+            "img/01_teclados/teclado1/img1.jpg",
+            "img/01_teclados/teclado1/img2.jpg",
+            "img/01_teclados/teclado1/img3.jpg"
+        ],
+        "precio": 260000,
+        "moneda": "COP"
     },
     {
         "id": 2,
-        "nombre": "Producto B",
-        "descripcion": "Descripción del Producto B. Otro producto para mostrar.","imagen": "producto-b.jpg",
-        "precio": 49.50
+        "nombre": "Diadema Logitech G435",
+        "descripcion": "Diadema ultraligera con audio envolvente y conectividad inalámbrica.",
+        "categoria": "Ratones",
+        "imagenes": [
+            "img/02_ratones/raton1/img1.jpg",
+            "img/02_ratones/raton1/img2.jpg",
+            "img/02_ratones/raton1/img3.jpg"
+        ],
+        "precio": 320000,
+        "moneda": "COP"
     },
     {
         "id": 3,
-        "nombre": "Producto C",
-        "descripcion": "Descripción del Producto C. Un tercer producto en elcatálogo.","imagen": "producto-c.jpg",
-        "precio": 15.75
+        "nombre": "Mouse Logitech G305",
+        "descripcion": "Ratón inalámbrico de alto rendimiento con sensor HERO para máxima precisión.",
+        "categoria": "Diademas",
+        "imagenes": [
+            "img/03_diademas/diadema1/img1.jpg",
+            "img/03_diademas/diadema1/img2.jpg",
+            "img/03_diademas/diadema1/img3.jpg"
+        ],
+        "precio": 180000,
+        "moneda": "COP"
+    },
+    {
+        "id": 4,
+        "nombre": "Board B760 GAMING PLUS WIFI",
+        "descripcion": "Placa madre con conectividad WiFi y soporte para los últimos procesadores Intel.",
+        "categoria": "Chasis",
+        "imagenes": [
+            "img/04_chasis/chasis1/img1.jpg",
+            "img/04_chasis/chasis1/img2.jpg",
+            "img/04_chasis/chasis1/img3.jpg"
+        ],
+        "precio": 990000,
+        "moneda": "COP"
+    },
+    {
+        "id": 5,
+        "nombre": "Chasis Gamemax Optical g510 Black",
+        "descripcion": "Chasis elegante con panel lateral de vidrio templado y flujo de aire optimizado.",
+        "categoria": "Monitores",
+        "imagenes": [
+            "img/05_monitores/monitor1/img1.jpg",
+            "img/05_monitores/monitor1/img2.jpg",
+            "img/05_monitores/monitor1/img3.jpg"
+        ],
+        "precio": 400000,
+        "moneda": "COP"
+    },
+    {
+        "id": 6,
+        "nombre": "Monitor LG curvo Full HD de 31,5 pulgadas",
+        "descripcion": "Monitor curvo Full HD con tecnología avanzada para una experiencia inmersiva.",
+        "categoria": "Boards",
+        "imagenes": [
+            "img/06_boards/board1/img1.jpg",
+            "img/06_boards/board1/img2.jpg",
+            "img/06_boards/board1/img3.jpg"
+        ],
+        "precio": 850000,
+        "moneda": "COP"
+    },
+    {
+        "id": 7,
+        "nombre": "Procesador AMD Ryzen 5 5600X",
+        "descripcion": "Procesador potente con 6 núcleos ideal para gaming y multitarea eficiente.",
+        "categoria": "Procesadores",
+        "imagenes": [
+            "img/07_procesadores/procesador1/img1.jpg",
+            "img/07_procesadores/procesador1/img2.jpg",
+            "img/07_procesadores/procesador1/img3.jpg"
+        ],
+        "precio": 780000,
+        "moneda": "COP"
+    },
+    {
+        "id": 8,
+        "nombre": "Camara web logitech c920",
+        "descripcion": "Cámara web HD con micrófono integrado para videollamadas de alta calidad.",
+        "categoria": "Memorias",
+        "imagenes": [
+            "img/08_memorias/memoria1/img1.jpg",
+            "img/08_memorias/memoria1/img2.jpg",
+            "img/08_memorias/memoria1/img3.jpg"
+        ],
+        "precio": 320000,
+        "moneda": "COP"
+    },
+    {
+        "id": 9,
+        "nombre": "Memoria Ram Kingston Fury Beast",
+        "descripcion": "Memoria RAM DDR4 de alto rendimiento, ideal para gaming y diseño.",
+        "categoria": "Refrigeracion",
+        "imagenes": [
+            "img/09_refrigeracion/refrigeracion1/img1.jpg",
+            "img/09_refrigeracion/refrigeracion1/img2.jpg",
+            "img/09_refrigeracion/refrigeracion1/img3.jpg"
+        ],
+        "precio": 330000,
+        "moneda": "COP"
+    },
+    {
+        "id": 10,
+        "nombre": "Base refrigerante Jaltech",
+        "descripcion": "Base refrigerante para portátiles con ventiladores silenciosos y diseño ergonómico.",
+        "categoria": "Webcams",
+        "imagenes": [
+            "img/10_webcams/webcam1/img1.jpg",
+            "img/10_webcams/webcam1/img2.jpg",
+            "img/10_webcams/webcam1/img3.jpg"
+        ],
+        "precio": 65000,
+        "moneda": "COP"
     }
 ]
