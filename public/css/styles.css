@@ -2,7 +2,6 @@
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* TODO: Agregar estilos responsive aquí (media queries) para diferentestamaños de pantalla */
 
 @media (max-width: 768px) {
@@ -26,7 +25,6 @@
     #redes-sociales {
         padding: 5px; /* Reduce el espacio interno */
     }
-
     #redes-sociales img {
         width: 25px; /* Reduce el tamaño de los íconos */
         height: 25px;
@@ -34,9 +32,8 @@
 }
 
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Estilos generales de la pagina, cuerpo, titulos, parrafos, botones etc*/
 
 body {
@@ -49,6 +46,7 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+
 
 
 
@@ -75,7 +73,6 @@ h2, h3 {
     transform: translateY(-10px); /* Efecto de elevación */
 }
 
-
 button {
     background-color: #a62d437a; /* Fondo inicial */
     color: #F5FBEF; /* Texto claro */
@@ -93,9 +90,8 @@ button:hover {
 
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------- Estilos del header --------------------------------------------------------------------------------------------------------- */
 
 header {
@@ -108,14 +104,6 @@ header {
     height: 120px;
     box-shadow: 0px 4px 12px rgba(207, 207, 207, 0.514); /* Sombra sutil */
 }
-
-header h1 {
-    font-family: 'Orbitron', sans-serif;
-    color: #F5FBEF; /* Texto claro */
-    font-size: 36px;
-    letter-spacing: 2px;
-}
-
 
 header h1 {
     font-family: 'Orbitron', sans-serif;
@@ -146,9 +134,8 @@ header nav a:hover {
 }
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------- Estilos del Footer ---------------------------------------------------------------------------------------------------------- */
 
 
@@ -166,9 +153,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-
 }
+
 
 footer a {
     color: #F24162; /* Enlaces vibrantes */
@@ -181,18 +167,20 @@ footer a:hover {
     color: #F24171; /* Resaltado en hover */
 }
 
+footer a:focus {
+    outline: 2px solid #F24162;
+}
+
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*-------------------------------------------------- Estilos del Main ---------------------------------------------------------------------------------------------------------- */
 
 main {
     display: flex;
     /* Para maquetación flexible - Los alumnos pueden experimentar con grid también */
     flex-wrap: wrap;
-    /* Para que los productos se envuelvan en pantallaspequeñas */
+    /* Para que los productos se envuelvan en pantallas pequeñas */
     justify-content: center;
     /* Centrar los productos horizontalmente */
     padding: 20px;
@@ -214,12 +202,7 @@ main {
     margin-bottom: 10px;
 }
 
-
-
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*--------------------------------------------- Estilos para el carrusel principal o inicial de imagenes de la pagina ------------------------------------------------------------*/
 
 .carrusel-principal {
@@ -244,59 +227,56 @@ main {
     border-radius: 10px; /* Bordes redondeados */
 }
 
-
 /* Efecto hover para imágenes */
 .carrusel-principal img:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada en hover */
 }
 
 
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*------------------------------------------- Estilos de la barra horizontal con las categorias -----------------------------------------------------------------------------------*/
 
 .barra-horizontal {
-    margin-top: 100px; /* Espaciado más claro para evitar sobresaturación visual */
+    margin-top: 100px; /* Espaciado para evitar sobresaturación visual */
 }
 
 .barra-horizontal ul {
-    display: flex; /* Mantén el diseño en fila */
-    justify-content: space-around; /* Distribuye las imágenes uniformemente */
-    align-items: center; /* Asegúrate de que las imágenes se alineen verticalmente */
+    display: flex; /* Diseño en fila */
+    justify-content: space-around; /* Distribución uniforme entre imágenes */
+    align-items: center; /* Alinea verticalmente */
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 25px; /* Incrementa el espacio entre imágenes */
+    gap: 25px; /* Incrementa el espacio entre elementos */
 }
 
 .barra-horizontal li {
     display: flex;
-    flex-direction: column; /* El texto va debajo de las imágenes */
-    align-items: center; /* Centrar imágenes y texto */
+    flex-direction: column; /* El texto se coloca debajo de la imagen */
+    align-items: center;
     text-align: center;
 }
 
 .barra-horizontal img {
-    width: 250px; /* Tamaño fijo de las imágenes */
+    width: 250px; /* Tamaño fijo para las imágenes */
     height: 250px;
-    object-fit: cover; /* Ajusta las imágenes al contenedor */
-    border-radius: 10px; /* Retorna un pequeño borde redondeado */
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin distorsión */
+    border-radius: 10px; /* Bordes redondeados */
     margin: 0;
 }
 
 .barra-horizontal span {
-    margin-top: 25px; /* Espaciado ligeramente mayor entre imagen y texto */
-    font-size: 25px; /* Tamaño un poco más grande para comodidad visual */
+    margin-top: 25px; /* Espacio entre imagen y texto */
+    font-size: 25px; /* Texto más grande para facilitar la visibilidad */
     font-weight: bold;
-    color: #F5FBEF; /* Color claro para buena visibilidad */
+    color: #F5FBEF;
 }
+
 
 /* Estilo para los botones debajo de la barra */
 .barra-horizontal .botones {
     display: flex;
-    justify-content: center; /* Centrar los botones horizontalmente */
+    justify-content: center; /* Centrado horizontal de los botones */
     margin-top: 10px;
 }
 
@@ -305,55 +285,50 @@ main {
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 24px; /* Aumentar el tamaño de las flechas */
-    color: #F5FBEF; /* Color claro para las flechas */
-    border-radius: 50%; /* Forma circular para los botones */
-    width: 40px; /* Tamaño fijo */
-    height: 40px; /* Tamaño fijo */
+    font-size: 24px; /* Tamaño de las flechas */
+    color: #F5FBEF;
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrar las flechas */
+    justify-content: center;
     transition: background-color 0.9s ease;
 }
 
 .barra-horizontal button:hover {
-    background-color: #F24171; /* Cambiar color en hover */
+    background-color: #F24171; /* Cambio de color en hover */
 }
-
 
 .barra-horizontal button:nth-child(1)::before {
     content: '◄'; /* Icono de flecha para retroceder */
 }
 
 .barra-horizontal button:nth-child(2)::before {
-    content: '►'; /* Icono de flecha para avanzar */
+    content: '►'; /* Icono para avanzar */
 }
-
 
 /* Efectos para las imagenes de la barra horizontal*/
 .barra-horizontal img:hover {
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Resaltar al pasar el cursor */
-    transform: scale(1.20); /* Pequeño zoom */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Resalta la imagen en hover */
+    transform: scale(1.20); /* Efecto zoom */
     transition: all 0.8s ease;
 }
 
-
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*------------------------------------------------- Estilos para el contenedor de las imagenes -------------------------------------------------------------------------------*/
 
 #contenedor-productos {
-    display: grid; /* Activa el diseño de grid */
+    display: grid; /* Diseño de grid para distribuir productos */
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-    gap: 40px 30px; /* Separación entre filas y columnas */
-    padding: 20px; /* Espaciado interno */
+    gap: 40px 30px; /* Espaciado entre filas y columnas */
+    padding: 20px;
     margin: 50px auto; /* Centra horizontalmente y agrega espacio superior */
-    max-width: 1200px; /* Define un ancho máximo */
-    text-align: center; /* Centra el texto por defecto */
+    max-width: 1200px; /* Ancho máximo */
+    text-align: center;
 }
+
 
 
 .producto {
@@ -366,24 +341,62 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos interactivos */
 }
 
+.producto {
+    background-color: #1e1e20; /* Fondo oscuro */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    margin: 15px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .producto:hover {
-    transform: translateY(-15px); /* Elevar ligeramente la tarjeta al pasar el cursor */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); /* Intensificar la sombra en hover */
+    transform: translateY(-15px); /* Efecto de elevación */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); /* Intensifica la sombra en hover */
+}
+
+.producto h3 {
+    font-size: 18px;
+    color: #F5FBEF;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #F5FBEF;
+    margin-bottom: 15px;
+}
+
+.producto button {
+    background-color: #F24162; /* Botón de acción */
+    color: #F5FBEF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.8s ease, transform 0.5s ease;
+}
+
+.producto button:hover {
+    background-color: #A62D43; /* Cambio de color en hover */
+    transform: scale(1.10);
 }
 
 .carrusel .imagenes {
     display: flex;
     gap: 100px; /* Espaciado entre imágenes */
     overflow-x: auto; /* Permite desplazamiento horizontal */
-    scroll-behavior: smooth; /* Transición suave al desplazarse */
+    scroll-behavior: smooth; /* Transición suave en el scroll */
 }
 
 .carrusel img {
     flex: 0 0 150px; /* Tamaño fijo para las imágenes */
     border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra decorativa */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
+
 
 .producto h3 {
     font-size: 18px; /* Tamaño del título del producto */
@@ -413,10 +426,7 @@ main {
     transform: scale(1.10); /* Efecto de ampliación ligera */
 }
 
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*--------------------------------------------- Estilos para el carrusel principal o inicial de imagenes de la pagina ------------------------------------------------------------*/
 
 #redes-sociales {

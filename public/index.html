@@ -2,24 +2,17 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catálogo de Productos Millenial System" />
     <title>Catálogo de Productos</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 
-
 <body>
-
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!-------------------------------------------------------- Header de la pagina -------------------------------------------------------------------------------------------------->
-
+    <!-- Header -->
     <header>
         <h1>Millenial System</h1>
         <nav>
@@ -31,77 +24,50 @@
         </nav>
     </header>
 
-
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!------------------------------------------------- Creacion de un carrusel de imagenes automatico ------------------------------------------------------------------------------->
-
-    <div id="carrusel-principal" class="carrusel-principal">
+    <!-- Carrusel principal -->
+    <section id="carrusel-principal" class="carrusel-principal">
         <div class="imagenes">
-            <!-- Aquí van las imágenes del carrusel -->
+            <!-- Imágenes del carrusel se cargarán dinámicamente -->
         </div>
-    </div>
+    </section>
 
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Barra horizontal para categorías -->
+    <section id="barra-categorias-horizontal" class="barra-horizontal">
+        <ul id="lista-categorias-horizontal"></ul>
+    </section>
 
-    <!------------------------------------------------- Creacion de una barra horizontal para mostrar las categorias de los productos ----------------------------------------------->
-
-    <div id="barra-categorias-horizontal" class="barra-horizontal">
-        <ul id="lista-categorias-horizontal">
-            <!-- Aquí van las categorías dinámicamente -->
-        </ul>
-    </div>
-
-
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!------------------------------------------------- Creacion de una barra lateral para ir a redes sociales ---------------------------------------------------------------------->
-
-
+    <!-- Barra lateral de redes sociales -->
     <aside id="redes-sociales">
         <ul>
             <li>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="./icons/facebook.jpg" alt="">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./icons/facebook.jpg" alt="Icono de Facebook" />
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="./icons/instagram.jpg" alt="">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./icons/instagram.jpg" alt="Icono de Instagram" />
                 </a>
             </li>
             <li>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="./icons/twitter.jpg" alt="">
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./icons/twitter.jpg" alt="Icono de Twitter" />
                 </a>
             </li>
         </ul>
     </aside>
-    
-    
-    
-    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!------------------------------------------------- Contenador de productos en el main ---------------------------------------------------------------------------------------->
-
-
+    <!-- Contenedor principal de productos -->
     <main id="contenedor-productos">
-        <!-- Aquí se insertarán los productos dinámicamente con JavaScript-->
+        <!-- Aquí se inyectará el listado de productos dinámicamente -->
     </main>
 
-
-
-    
+    <!-- Footer -->
     <footer>
         <p>© 2025 Catálogo de Productos Millenial System</p>
     </footer>
 
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>
